@@ -1,0 +1,282 @@
+
+body a, a:link, a:hover {
+  text-decoration: none;
+}
+
+
+.box_sucursal{
+  cursor: pointer;
+}
+
+.box_sucursal:hover{
+  cursor: pointer;
+  background-color:#fff7f8;
+  
+}
+
+
+
+.logo_iris{
+  width: 70px;
+  
+}
+
+
+.contenedor_cabezal{
+  width: 1068px;
+  padding:15px;
+  box-sizing: border-box;
+  background: white;
+  
+  
+}
+
+.contenedor_cuerpo{
+  background: white;
+  margin-bottom: 15px; 
+}
+
+.degradado {
+  background: linear-gradient(180deg, #E9919B 0%, rgba(255, 255, 255, 0) 100%), #710404;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.cuadro_forma{
+  width: 400px;
+  margin:auto;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  padding: 50px;
+}
+
+
+.box_calendario {
+    width: 130px;
+    height: 100px;
+    border: solid 1px #660000;
+    background: white;
+    color: #660000;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.4em;
+    cursor: pointer;
+    margin: 9px;
+   
+
+}
+
+.box_calendario:hover{
+    background: #660000;
+    color:#fff;
+    cursor: pointer;
+  }
+
+
+.box_calendario_ocupado{
+    background: #660000;
+    color:#fff;
+    cursor: pointer;
+  }
+
+.box_calendario_apartado{
+    background: #660000;
+    color:#fff;
+    cursor: pointer;
+  }
+
+
+
+.menu_lateral{
+  padding-top: 30px;
+  width: 70px;
+  min-height: 725px;
+  height: 100%;
+}
+
+
+.box_circule{
+    width: 74px;
+    height: 74px;
+    font-size: 2.3em;
+    float: left
+}
+
+
+ .cuadros_menus {
+               
+    width: 262px;
+    height: 174px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border:1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white; 
+    text-align: center;           
+    }
+
+
+  .cuadros_menus:hover{
+            color:#ffcc00;
+             background-color: #000; 
+    }
+    .circulo_rojo{
+      background:red;
+      height: 20px;
+      width: 20%;  
+      position: float;  
+      display: inline-block;
+      margin-right: 3px;
+    }
+    .circulo_amarillo{
+      background:yellow; height: 20px;width: 20%; display: inline-block; margin-right: 3px
+    }
+  .contendor_titulo {
+             font-size: 1.2em;
+             margin-top: 15px;
+             margin-bottom: 10px;
+             font-weight: bold;
+           }
+
+ .icono_zona{
+          color:#fff;
+          font-size: 4em;
+          display: flex;
+        }
+
+.fondo{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d3d2d0+0,e5e1e2+100 */
+background: #d3d2d0; /* Old browsers */
+background: linear-gradient(to bottom,  #fff 0%,#fff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+margin-bottom: 100px;
+
+}
+
+
+/* Colores */
+
+.rojo_obscuro {
+  color:#660000;
+}
+
+.rojo_obscuro_btn {
+  background-color:#660000;
+  
+}
+ .color_rojo_suave {
+    background-color:#fff7f8;
+  }
+
+  .color_rojo_suave input {
+    background-color:#fff7f8;
+  }
+
+.color_inpurs {
+  color: #f9bdc4;
+}
+
+.gris_claro {
+  color: #ccc;
+}
+
+.titulo_seccion {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+ .border_seccion{
+  border-bottom: solid 3px #660000;
+
+}
+
+
+
+h1, h2, h3 {
+   margin:0px; margin:0px;
+   line-height: 10px;
+}
+
+.iconos_menu  a {
+  color:white;
+  font-size: 1.7em;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.iconos_menu  a:hover {
+  color:#ffcc00;
+  font-size: 1.7em;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.active {
+  color:#ffcc00;
+  font-size: 1em;
+  
+}
+
+.user_text{
+  font-size: 25px;
+  color:#fff;
+  padding: 5px;                                                                                                             
+}
+
+.autocompletar{
+  position: relative;
+  display: inline-block;
+}
+
+strong{
+  color: black;
+}
+
+#tipo-cliente{
+  background-color: #eee;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.7em;
+  padding: 10px 25px;
+  outline: none;
+  width: 300px;
+}
+
+.lista-autocompletar-items{
+  color: #ccc;
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  z-index: 99;
+
+  top: 100%;
+  left: 20px;
+  right: 0;
+  width: 93%;
+
+}
+.lista-autocompletar-items div{
+  padding: 10px;
+  cursor: pointer;
+  background-color: #FFF;
+  border-bottom: 1px solid #d4d4d4;
+
+}
+
+.lista-autocompletar-items div:hover{
+  background-color: dodgerblue;
+
+}
+.autocompletar-active{
+  background-color: dodgerblue;
+  color: #a1caff;
+
+}
+.autocompletar-active strong{
+ 
+  color: #fff;
+  
+}
