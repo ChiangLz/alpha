@@ -68,7 +68,7 @@ class consul{
         return $this->lista;
     }
     public function reportes_sucursalesadm(){
-        $consulta=$this->db->query("SELECT cliente.id as idc, cliente.nomcli, servicio.tipo, servicio.id as ids, unidades.noserie, unidades.nomuni, unidades.marca, unidades.modelo, unidades.placas, orden_servicio.id as ido, orden_servicio.fecha_inicial, orden_servicio.fecha_final, orden_servicio.hora_inicial, orden_servicio.hora_final, orden_servicio.kilometraje, orden_servicio.marcandia_transportar, orden_servicio.dirrecoleccion, orden_servicio.direntrega, orden_servicio.hrecoleccion, orden_servicio.hrcita, orden_servicio.ciudaddestino FROM orden_servicio INNER JOIN cliente ON cliente.id=orden_servicio.idcli INNER JOIN unidades on unidades.noserie=orden_servicio.iduni INNER JOIN servicio ON servicio.id=orden_servicio.idservi");
+        $consulta=$this->db->query("SELECT cliente.id as idc, cliente.nomcli, servicio.tipo, servicio.id as ids, unidades.noserie, unidades.nomuni, unidades.marca, unidades.modelo, unidades.placas, orden_servicio.id as ido, orden_servicio.fecha_inicial, orden_servicio.fecha_final, orden_servicio.hora_inicial, orden_servicio.hora_final, orden_servicio.kilometraje, orden_servicio.marcandia_transportar, orden_servicio.dirrecoleccion, orden_servicio.direntrega, orden_servicio.hrecoleccion, orden_servicio.hrcita, orden_servicio.ciudaddestino FROM orden_servicio INNER JOIN cliente ON cliente.id=orden_servicio.idcli INNER JOIN unidades on unidades.noserie=orden_servicio.iduni INNER JOIN servicio ON servicio.id=orden_servicio.idservi"); echo "hi";
         while($filas=$consulta->fetch_assoc()){
             $this->lista[]=$filas;
         }

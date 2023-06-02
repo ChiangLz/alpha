@@ -3,7 +3,7 @@
 function conexion() {
 	//Declaramos el servidor, la BD, el usuario Mysql y Contraseña BD.
     //return new PDO('mysql:host=localhost;dbname=alfadmin_alfa', 'alfadmin_admin', 'AlfaMex2020!', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
-	return new PDO('mysql:host=localhost;dbname=alfadmin_alfa', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+	return new PDO('mysql:host=localhost;dbname=alfadmin_alfa', 'root', '0000', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 
 }
 

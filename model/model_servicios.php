@@ -69,14 +69,14 @@ class consul{
         $variables = "'" . $idc . "," . $ids . "," . $select_cliente . "," . $select_servicio . "," . $select_unidad . "," . $fecha_inicial . "," . $fecha_final . "," . $timeI . "," . $timeF . "," . $select_transportar . "," . $kilometraje . "," . $monto_deposito . "," . $valor_pagare . "," . $direcol . "," . $direntrega . "," . $cddes . "," . $timeR . "," . $timeC . "," . $costoser . "," . $fachaActual . "'";
         $sql = "INSERT INTO debug(id, function_name, date_in, variables) values
         ('', 'add_servicios', '$fecha', $variables)";
-        $insert_debug=$this->db->query($sql);
+        //$insert_debug=$this->db->query($sql);
         /* $dini = date("d", strtotime("$fecha_inicial"));
         $dfin = date("d", strtotime("$fecha_final"));
         $mini = date("Y-m", strtotime("$fecha_inicial"));   
         for ($i=$dini; $i <=$dfin; $i++) { */
         date_default_timezone_set('America/Mexico_City');
-        $sql = "INSERT INTO orden_servicio(id, idservi, idcli, iduni, fecha_inicial, fecha_final, hora_inicial, hora_final, kilometraje, monto_deposito, valor_pagare, marcandia_transportar, idsucur, idcol, dirrecoleccion, direntrega, hrecoleccion, hrcita, ciudaddestino, costo, altaactivi, folio) 
-        VALUES (null,$select_servicio,$select_cliente,$select_unidad,'$fecha_inicial','$fecha_final','$timeI','$timeF','$kilometraje','$monto_deposito','$valor_pagare','$select_transportar',$ids,$idc,'$direcol','$direntrega','$timeR','$timeC','$cddes','$costoser','$fachaActual', null)";
+        $sql = "INSERT INTO orden_servicio(idservi, idcli, iduni, fecha_inicial, fecha_final, hora_inicial, hora_final, kilometraje, monto_deposito, valor_pagare, marcandia_transportar, idsucur, idcol, dirrecoleccion, direntrega, hrecoleccion, hrcita, ciudaddestino, costo, altaactivi, folio)".
+        "VALUES ($select_servicio,$select_cliente,$select_unidad,'$fecha_inicial','$fecha_final','$timeI','$timeF','$kilometraje','$monto_deposito','$valor_pagare','$select_transportar',$ids,$idc,'$direcol','$direntrega','$timeR','$timeC','$cddes','$costoser','$fachaActual', 'null')";
         
         $alta_servicios = $this->db->query($sql);
         // } 
