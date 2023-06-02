@@ -19,14 +19,7 @@ class consul{
         return $this->lista;
     }
     public function sucursaladm1(){
-        $consulta=$this->db->query("SELECT * FROM sucursal WHERE id<=3");
-        while($filas=$consulta->fetch_assoc()){
-            $this->lista[]=$filas;
-        }
-        return $this->lista;
-    }
-    public function sucursaladm2(){
-        $consulta=$this->db->query("SELECT * FROM sucursal WHERE id>=4 AND id<=5 ");
+        $consulta=$this->db->query("SELECT * FROM sucursal");
         while($filas=$consulta->fetch_assoc()){
             $this->lista[]=$filas;
         }
@@ -34,6 +27,7 @@ class consul{
     }
     public function representante($ids){
         $consulta=$this->db->query("SELECT * FROM representante WHERE idsuc=$ids");
+        
         while($filas=$consulta->fetch_assoc()){
             $this->lista[]=$filas;
         }

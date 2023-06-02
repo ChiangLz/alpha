@@ -549,7 +549,7 @@ $pdf->Cell(5,5,utf8_decode("EL ARRENDADOR"));
 
 $pdf->setY(235);$pdf->setX(70);
 $pdf->Cell(5,5,utf8_decode($tofirm[0]));
-$pdf->Cell(12,12,utf8_decode($tofirm[1]));
+//$pdf->Cell(12,12,utf8_decode($tofirm[1]));
 
 
 $pdf->setY(246);$pdf->setX(65);
